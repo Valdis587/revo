@@ -1,0 +1,120 @@
+@import "base/null.scss";
+
+
+:root {
+   --HeadColor: #ff5e00;
+   --DubleColor: #f2f2f2;
+   --DubleTextColor: #2d2d2d;
+   --HeadTextColor: #ffffff;
+   --HeadButtonColor: #2d2d2d;
+   --HeadTextButtonColor: #ffffff;
+   --ColorButton: #ff5e00;
+   --ColorButtonHover: #FF5F0F;
+   --ColorButtonText: #ffffff;
+   --ColorLink: #7d7d7d;
+   --ColorLinkHover: #ff5e00; 
+   --ColorCountBack: #E67E22;
+   --ColorCountText: #ffffff;
+   --ColorFooter: #181818;
+   --ColorTextFooter: #bbbbbb;
+   --TitleColor: #ff5e00;
+   --TitleTextColor: #ffffff;
+   --yith-wcan-labels_style_background_hover: #ff5e00;
+    --yith-wcan-filters_colors_accent: #ff5e00;
+    --yith-wcan-anchors_style_text_hover:  #ff5e00; 
+    --yith-wcan-anchors_style_text_active: #ff5e00;
+    --badgickSale: #ff2d37;
+    --badgickNew: #3599ff;
+    --badgickHit: #098524; 
+} 
+
+$minWidth: 320;
+$maxWidthContainer: 1590;
+$padding: 15;
+
+$HeadColor: var(--HeadColor);
+$DubleColor: var(--DubleColor);
+$HeadTextColor: var(--HeadTextColor);
+$ColorButton: var(--ColorButton);
+$ColorButtonText: var(--ColorButtonText);
+$ColorButtonHover: var(--ColorButtonHover);
+$ColorLink: var(--ColorLink);
+$ColorLinkHover: var(--ColorLinkHover);
+$ColorCountBack: var(--ColorCountBack);
+$ColorCountText: var(--ColorCountText);
+$DubleTextColor: var(--DubleTextColor);
+$ColorFooter : var(--ColorFooter);
+$ColorTextFooter: var(--ColorTextFooter);
+$HeadButtonColor: var(--HeadButtonColor);
+$HeadTextButtonColor: var(--HeadTextButtonColor);
+$TitleColor: var(--TitleColor);
+$TitleTextColor: var(--TitleTextColor);
+
+.site-wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column
+}
+.page-wrapper {
+   flex: 1 1 auto
+}
+
+.site-title {
+   position: relative;
+   border-bottom: 3px solid;
+   border-color: $TitleColor;
+   border-bottom-color: $TitleColor;
+   font-size: 100%;
+   padding: 0;
+   margin: 0px 0px -1px 0px;
+   height: 40px;
+}
+
+.site-title::before {
+   content: "";
+   border: 1px solid #ddd;
+   display: inline-block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+   top: 3px;
+   left: 0;
+   right: 0;
+}
+
+.site-title span::before {
+   content: "";
+   display: inline-block;
+   position: absolute;
+   top: 0px;
+   width: 0;
+   height: 0;
+   border-bottom: 40px solid $TitleColor;
+   right: -20px;
+   border-right: 20px solid transparent;
+}
+
+.site-title span {
+   display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  color: $TitleTextColor;
+  line-height: 40px;
+  padding: 0 18px;
+  background-color: $TitleColor;
+}
+
+
+@import "./base/grid.scss";
+@import "base/mixin";
+@import "fonts";
+@import "./sidebar.scss";
+@import "./woo/woo.scss";
+@import "./wp/wp.scss";
+@import "header";
+@import "./blog.scss";
+@import "footer";
+
+

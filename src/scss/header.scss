@@ -1,0 +1,217 @@
+.header {
+    &__top-line {
+        background-color: $DubleColor;
+        color: $DubleTextColor;
+        font-size: 12px;
+    }
+    &__top-content {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 30px;
+        align-items: center;
+        min-height: 30px;
+    }
+    &__menu-list {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        li a i {
+            padding: 0 5px 0 0;
+        }
+        li a {
+            transition: all 0.6s ease 0.3s; 
+        }
+        li a:hover {
+            color: $ColorLinkHover;
+        }
+    }
+   
+    &__center-line {
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @media(max-width: 980px) {
+          justify-content: space-around;
+          gap: 10px;
+        }
+        @media(max-width: 460px) {
+            flex-direction: column; 
+    }
+    }
+    &__logo {
+        color: #ffffff;
+    }
+    &__logo, &__contact {
+        max-width: 19.99%;
+        padding: 5px;
+        flex: 0 0 19.99%;
+        @media(max-width: 980px) {
+            max-width: 49.99%;
+            flex: 1 1 49.99%; 
+    }
+    @media(max-width: 460px) {
+        max-width: 100%;
+        flex: 1 1 100%; 
+}
+}
+    &__menu-center {
+        padding: 5px;
+        max-width: 59.99%;
+        flex: 1 1 59.99%;
+        @media(max-width: 980px) {
+            max-width: 0;
+            flex: 1 1 auto;
+        }
+    }
+    &__contact {
+        text-align: right;
+    }
+    &__contact-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        font-size: 18px;
+        li a i {
+            color: $HeadColor;
+            padding: 0 5px 0 0;
+            font-size: 16px;
+        }
+        li a {
+            transition: all 0.6s ease 0.3s; 
+        }
+        li a:hover {
+            color: $ColorLinkHover;
+        }
+    }
+    &__bottom-line {
+        background-color: $HeadColor;
+        color: $HeadTextColor;
+    }
+    &__bottom-content {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        min-height: 60px;
+    }
+    &__bottom-menu-box, &__bottom-icon-box {
+        max-width: 19.99%;
+        flex: 0 0 19.99%;
+        @media(max-width: 690px) {
+            max-width: 49.99%;
+        flex: 1 1 49.99%;
+        }
+    }
+    &__bottom-menu-box {
+        position: relative;
+    }
+    &__bottom-search {
+        width: 59.99%;
+        flex: 1 1 59.99%;
+        padding: 0 10px;
+        @media(max-width: 690px) {
+            display: none;
+        }
+    }
+    &__button-wrapper {
+        background-color: $HeadButtonColor;
+        color: $HeadTextButtonColor;
+        font-size: 18px;
+    }
+    &__button-category {
+        font-size: 30px;
+        @media(min-width: 880px) {
+            display: none;  
+        }
+    }
+    &__button-wrapper {
+        padding: 20px 5px;
+        @media(max-width: 880px) {
+            display: none;
+        }
+    }
+    &__link-category {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        i {
+            font-size: 20px;
+        }
+    }
+    &__form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    &__select {
+        background-color: #ffffff;
+        height: 39px;
+        padding: 0 10px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    &__input {
+        width: 100%;
+        padding: 10px 5px;
+    }
+    &__search-button {
+        background-color: $HeadButtonColor;
+        color: $HeadTextButtonColor;
+        padding: 11px 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;  
+    }
+    &__bottom-icon-box {
+        position: relative;
+    }
+    &__bottom-icon-list {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        column-gap: 20px;
+        color: #181818;
+        li a i {
+            background-color: #ffffff;
+            padding: 12px;
+            font-size: 18px;
+            border-radius: 100%;
+        }
+    }
+    &__num-cart, &__num-withelist {
+        background-color: #ffffff;
+        border-radius: 100%;
+        color: #181818;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        font-size: 12px;
+        border: 1px solid $HeadColor;
+        position: absolute;
+        top: -17px;
+    }
+    &__num-withelist {
+        right: 60px;
+    }
+    &__num-cart {
+        right: 0;
+    }
+}
+@import "./menu.scss";
+
+.social-icon-list {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-size: 19px;
+    li a i {
+        border: 1px solid $DubleTextColor;
+        padding: 5px;
+        border-radius: 3px;
+        transition: all 0.6s ease 0.3s; 
+    }
+    li a i:hover { 
+        background-color: $HeadColor;
+        color: #ffffff;
+    }
+}
