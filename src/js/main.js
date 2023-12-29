@@ -39,4 +39,10 @@ $('.header__minicart-link').click(function() {
     $('.woocommerce-mini-cart').toggleClass('open-minicart');
 });
 
+$('.sidebar__sub-category a').click(function() {
+    $('.sidebar__sub-menu').toggleClass('open-sidebar-category');
+
+});
+
+
 });

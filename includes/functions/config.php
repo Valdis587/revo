@@ -76,6 +76,10 @@ if ( class_exists( 'WooCommerce' ) ) {
 
 	require get_template_directory() . '/widgets/rewievs.php';
 
+	require get_template_directory() . '/widgets/category.php';
+
+	require get_template_directory() . '/widgets/last-news.php';
+
 }
 
 
